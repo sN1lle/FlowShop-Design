@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>FlowShop</title>
 </head>
@@ -14,19 +15,38 @@
             <img src="assets/Flow_logo.png" alt="Логотип FlowShop">
         </a>
         <div class="links">
-            <a href="#">Каталог</a>
-            <a href="#">Информация о магазине</a>
+            <div class="link-block">
+                <a href="#" class="catalog">Каталог</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Категория 1</a></li>
+                    <li><a href="#">Категория 2</a></li>
+                    <li><a href="#">Категория 3</a></li>
+                    <li class="sub-menu">
+                        <a href="#">Категория 4</a>
+                        <ul class="sub-menu-items">
+                            <li><a href="#">Подкатегория 1</a></li>
+                            <li><a href="#">Подкатегория 2</a></li>
+                            <li><a href="#">Подкатегория 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="link-block">
+                <a href="#" class="about">О магазине</a>
+            </div>
         </div>
-        <div class="login">
-            <button class="signup">Get Started</button>
-            <button>Login</button>
+        <div class="icons">
+            <a href="#" class="icon">
+                <i class="fas fa-user-circle"></i> 
+            </a>
+            <a href="#" class="icon">
+                <i class="fas fa-shopping-cart"></i> 
+            </a>
         </div>
     </nav>
     <footer>
 
     </footer>
 </body>
-
-
 
 </html>

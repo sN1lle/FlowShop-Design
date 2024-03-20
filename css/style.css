@@ -6,33 +6,98 @@ nav {
     padding: 0 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     height: 80px;
     background-color: #0656f8;
     border-radius: 10px;
+    font-size: 18px;
 }
 
 nav .logo img {
-    width: 100px; /* Устанавливаем ширину логотипа */
-    height: auto; /* Автоматически подстраиваем высоту для сохранения пропорций */
+    width: 100px;
+    height: auto;
 }
 
-nav .links a:not(:last-child) {
+nav .logo {
+    margin-right: 20px; 
+}
+
+nav .links {
+    display: flex;
+}
+
+nav .link-block {
     margin-right: 20px;
+    position: relative;
 }
 
-nav .login button {
-    padding: 8px 14px;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-}
-
-nav .login button.signup {
-    background-color: #000;
+nav .links a {
     color: #fff;
-    border-radius: 4px;
-    margin-right: 14px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+nav .link-block {
+    padding: 29.5px 10px; 
+    transition: background-color 0.3s; 
+}
+
+nav .link-block:hover {
+    background-color: #3a8dff; 
+}
+
+.icons {
+    margin-left: auto; 
+}
+
+.icons a {
+    color: #fff;
+    font-size: 25px; 
+    margin-left: 20px; 
+    text-decoration: none;
+}
+
+.icons a:hover {
+    opacity: 0.8; 
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px); /* Опускаем меню четко под каталогами */
+    left: 0;
+    background-color: #0656f8;
+    padding: 10px;
+    list-style-type: none;
+    display: none;
+    opacity: 0; /* Начальное значение прозрачности */
+    transition: opacity 0.3s ease-in-out, top 0.3s ease; /* Добавляем плавный переход */
+}
+
+.link-block:hover .dropdown-menu {
+    display: block;
+    opacity: 1; /* Показываем меню при наведении */
+    top: 100%; /* Перемещаем меню четко под каталогами */
+}
+
+.link-block:hover .dropdown-menu li {
+    margin-bottom: 10px;
+}
+
+.sub-menu-items {
+    top: 0;
+    left: 100%;
+    background-color: #0656f8;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    transition: opacity 0.3s ease-in-out, top 0.3s ease; /* Добавляем плавный переход */
+    opacity: 0; /* Начальное значение прозрачности */
+}
+
+.sub-menu:hover .sub-menu-items {
+    display: block;
+    opacity: 1; /* Показываем подменю при наведении */
+    top: 0; /* Выравниваем подменю по верхнему краю */
 }
 
 /* #0656f8 */
