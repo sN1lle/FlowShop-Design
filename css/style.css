@@ -1,0 +1,38 @@
+body {
+    background-color: #e9ecf0;
+}
+
+nav {
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #0656f8;
+    border-radius: 10px;
+}
+
+nav .logo img {
+    width: 100px; /* Устанавливаем ширину логотипа */
+    height: auto; /* Автоматически подстраиваем высоту для сохранения пропорций */
+}
+
+nav .links a:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav .login button {
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+nav .login button.signup {
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 14px;
+}
+
+/* #0656f8 */
