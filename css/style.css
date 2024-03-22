@@ -83,21 +83,6 @@ nav .link-block:hover {
     margin-bottom: 10px;
 }
 
-.sub-menu-items {
-    top: 0;
-    left: 100%;
-    background-color: #0656f8;
-    padding: 10px;
-    display: none;
-    position: absolute;
-    transition: opacity 0.3s ease-in-out, top 0.3s ease; /* Добавляем плавный переход */
-    opacity: 0; /* Начальное значение прозрачности */
-}
 
-.sub-menu:hover .sub-menu-items {
-    display: block;
-    opacity: 1; /* Показываем подменю при наведении */
-    top: 0; /* Выравниваем подменю по верхнему краю */
-}
 
 /* #0656f8 */
