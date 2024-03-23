@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: #e9ecf0;
 }
 
@@ -63,20 +63,20 @@ nav .link-block:hover {
 
 .dropdown-menu {
     position: absolute;
-    top: calc(100% + 10px); /* Опускаем меню четко под каталогами */
+    top: calc(100% + 10px); 
     left: 0;
     background-color: #0656f8;
     padding: 10px;
     list-style-type: none;
     display: none;
-    opacity: 0; /* Начальное значение прозрачности */
-    transition: opacity 0.3s ease-in-out, top 0.3s ease; /* Добавляем плавный переход */
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out, top 0.3s ease; 
 }
 
 .link-block:hover .dropdown-menu {
     display: block;
-    opacity: 1; /* Показываем меню при наведении */
-    top: 100%; /* Перемещаем меню четко под каталогами */
+    opacity: 1; 
+    top: 100%; 
 }
 
 .link-block:hover .dropdown-menu li {
@@ -90,14 +90,14 @@ nav .link-block:hover {
     padding: 10px;
     display: none;
     position: absolute;
-    transition: opacity 0.3s ease-in-out, top 0.3s ease; /* Добавляем плавный переход */
-    opacity: 0; /* Начальное значение прозрачности */
+    transition: opacity 0.3s ease-in-out, top 0.3s ease; 
+    opacity: 0; 
 }
 
 .sub-menu:hover .sub-menu-items {
     display: block;
-    opacity: 1; /* Показываем подменю при наведении */
-    top: 0; /* Выравниваем подменю по верхнему краю */
+    opacity: 1; 
+    top: 0; 
 }
 
-/* #0656f8 */
+#0656f8 */

@@ -1,52 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>FlowShop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 5 демонстрационная страница</title>
+    <!-- Подключение CSS файла bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
-<!-- sjdgheijgvei -->
-<body>
-    <nav>
-        <a href="#" class="logo">
-            <img src="assets/Flow_logo.png" alt="Логотип FlowShop">
-        </a>
-        <div class="links">
-            <div class="link-block">
-                <a href="#" class="catalog">Каталог</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Категория 1</a></li>
-                    <li><a href="#">Категория 2</a></li>
-                    <li><a href="#">Категория 3</a></li>
-                    <li class="sub-menu">
-                        <a href="#">Категория 4</a>
-                        <ul class="sub-menu-items">
-                            <li><a href="#">Подкатегория 1</a></li>
-                            <li><a href="#">Подкатегория 2</a></li>
-                            <li><a href="#">Подкатегория 3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="link-block">
-                <a href="#" class="about">О магазине</a>
-            </div>
-        </div>
-        <div class="icons">
-            <a href="#" class="icon">
-                <i class="fas fa-user-circle"></i> 
-            </a>
-            <a href="#" class="icon">
-                <i class="fas fa-shopping-cart"></i> 
-            </a>
-        </div>
-    </nav>
-    <footer>
 
-    </footer>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Панель навигации</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Выпадающий список
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Действие</a></li>
+                  <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- Подключение JS файла bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
