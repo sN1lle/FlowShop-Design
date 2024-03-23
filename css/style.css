@@ -107,9 +107,14 @@ nav .link-block:hover {
 
 .my-carousel .carousel-item{
     display: flex;
-    max-height: 600px;
+    max-height: 550px;
 }
 
 .my-carousel .carousel-item img{
     object-fit: cover;
+}
+
+.footer {
+    background-color: #0656f8;
+    border-radius: 5px;
 }
