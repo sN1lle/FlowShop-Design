@@ -778,6 +778,13 @@ a {
 	display: flex;
 }
 
+.slide-container {
+	max-width: 1120px;
+	width: 100%;
+	background-color: grey;
+	padding: 40px;
+}
+
 .slide-content {
 	margin: 0 40px;
 }
@@ -797,14 +804,25 @@ a {
 }
 
 .image-content {
+	position: relative;
 	row-gap: 5px;
+}
+
+.overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #0656f8;
+	border-radius: 25px;
 }
 
 .card-image {
 	position: relative;
 	height: 300px;
 	width: 300px;
-	background: #FFF;
+	background: #0656f8;
 	padding: 3px;
 }
 
@@ -812,7 +830,7 @@ a {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-	border-radius: 25%;
+	border-radius: 15%;
 	border: 4px solid #0656f8;
 }
 
