@@ -772,27 +772,24 @@ a {
 	border-radius: 5px;
 }
 
-.slide-style {
-	justify-content: center;
-	align-items: center;
-	display: flex;
-}
-
 .slide-container {
 	max-width: 1120px;
 	width: 100%;
-	background-color: grey;
-	padding: 40px;
+	background-color: #e9ecf0;
+	padding: 60px;
 }
 
 .slide-content {
 	margin: 0 40px;
 }
 
+
+
 .card {
 	border-radius: 25px;
 	background-color: #FFF;
 	width: 350px;
+	
 }
 
 .image-content,
@@ -820,8 +817,8 @@ a {
 
 .card-image {
 	position: relative;
-	height: 300px;
-	width: 300px;
+	height: 200px;
+	width: 200px;
 	background: #0656f8;
 	padding: 3px;
 }
