@@ -1133,5 +1133,19 @@ a {
 	text-align: center;
 }
 
+.FAQ-contain {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border: 3px solid #0656f8;
+	background-color: #0656f8;
+}
+
+.button-FAQ {
+	background-color: #FFF;
+	color: black;
+	border-radius: 10px;
+}
+
 
 /* #0656f8  */
