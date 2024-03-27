@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Корзина | FlowShop</title>
+    <!-- Подключение CSS файла bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bundle.css">
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+</head>
+<header class="header_area">
+    <div class="header_middel" style="background-color: #0656f8;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-4">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/img/Flow_logo.png" height="60" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-5">
+                </div>
+                <div class="col-lg-2">
+                    <div class="cart_area">
+                        <div class="wishlist_link">
+                            <a href="login.html"><i class="fa fa-user-circle-o"></i></a>
+                        </div>
+                        <div class="cart_link">
+                            <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header_bottom sticky-header" style="background-color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-5">
+                    <div class="categories_menu">
+                        <div class="categories_title">
+                            <h2 class="categori_toggle">Категории</h2>
+                        </div>
+                        <div class="categories_menu_inner" style="width: 100%;">
+                            <ul>
+                                <li class="categorie_list"><a href="#">Доски<i class="fa fa-angle-right"></i></a>
+                                    <ul class="categories_mega_menu">
+                                        <li><a href="#">Вейксерфы</a>
+                                        </li>
+                                        <li><a href="#">Кайтборды</a>
+                                        </li>
+                                        <li><a href="#">Лонгборды</a>
+                                        </li>
+                                        <li><a href="#">Серфборды для CityWave</a>
+                                        </li>
+                                        <li><a href="#">Серфборды БУ</a>
+                                        </li>
+                                        <li><a href="#">Флоуборды</a>
+                                        </li>
+                                        <li><a href="#">Фоилборды</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="categorie_list"><a href="#">Серфинг <i class="fa fa-angle-right"></i></a>
+                                    <ul class="categories_mega_menu">
+                                        <li><a href="#">Фины</a>
+                                        </li>
+                                        <li><a href="#">Лиши</a>
+                                        </li>
+                                        <li><a href="#">Пады и вакса</a>
+                                        </li>
+                                        <li><a href="#">Чехлы и сумки</a>
+                                        </li>
+                                        <li><a href="#">Аксессуары для катера</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="categorie_list"><a href="#"> Аэротруба <i class="fa fa-angle-right"></i></a>
+                                    <ul class="categories_mega_menu column_3">
+                                        <li><a href="#">Аксессуары</a>
+                                        </li>
+                                        <li><a href="#">Бафы</a>
+                                        </li>
+                                        <li><a href="#">Джерси</a>
+                                        </li>
+                                        <li><a href="#">Комбинезоны</a>
+                                        </li>
+                                        <li><a href="#">Перчатки</a>
+                                        </li>
+                                        <li><a href="#">Шлема</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="categorie_list"><a href="#"> Одежда <i class="fa fa-angle-right"></i></a>
+                                    <ul class="categories_mega_menu column_2">
+                                        <li><a href="#">Кепки и шапки</a>
+                                        </li>
+                                        <li><a href="#">Пончо и полотенца</a>
+                                        </li>
+                                        <li><a href="#">Толстовки и худи</a>
+                                        </li>
+                                        <li><a href="#">Футболки</a>
+                                        </li>
+                                        <li><a href="#">Шорты</a>
+                                        </li>
+                                        <li><a href="#">Джерси</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="categorie_list"><a href="#"> Одежда для купания<i
+                                            class="fa fa-angle-right"></i></a>
+                                    <ul class="categories_mega_menu column_2">
+                                        <li><a href="#">Гидрокостюмы</a>
+                                        </li>
+                                        <li><a href="#">Гидромайки</a>
+                                        </li>
+                                        <li><a href="#">Купальники</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="categorie_list"><a href="#"> Аксессуары<i class="fa fa-angle-right"></i></a>
+                                    <ul class="categories_mega_menu column_2">
+                                        <li><a href="#">Аксессуары для экшен камеры</a>
+                                        </li>
+                                        <li><a href="#">Брелки, значки и сувениры</a>
+                                        </li>
+                                        <li><a href="#">Шлема, защиты и бандажи</a>
+                                        </li>
+                                        <li><a href="#">Аксессуары для плавания</a>
+                                        </li>
+                                        <li><a href="#">Очки и маски</a>
+                                        </li>
+                                        <li><a href="#">Прочие</a>
+                                        </li>
+                                        <li><a href="#">Свечи</a>
+                                        </li>
+                                        <li><a href="#">Часы</a>
+                                        </li>
+                                        <li><a href="#">Игрушки</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 position-relative">
+                    <div class="main_menu_inner">
+                        <div class="main_menu d-none d-lg-block">
+                            <ul>
+                                <li><a href="shop.html">Товары</a>
+                                </li>
+                                <li><a href="contact.html">О нас</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="mobile-menu d-lg-none">
+                            <nav>
+                                <ul>
+                                    <li><a href="shop.html">Категории</a>
+                                        <ul>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">О нас</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="contact_phone">
+                        <div class="contact_number">
+                            <p>Позвони нам:</p>
+                            <span>+7 (499) 670-09-09</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="breadcrumbs_area commun_bread">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb_content">
+                    <h3>Оформление</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><i class="fa fa-angle-right"></i></li>
+                        <li>Оформление заказа</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="Checkout_section">
+    <div class="container">
+        <div class="row">
+            <div class="checkout_form">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <form action="#">
+                            <h3>Данные пользователя</h3>
+                            <div class="row">
+
+                                <div class="col-lg-6 mb-20">
+                                    <label>Имя <span>*</span></label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-lg-6 mb-20">
+                                    <label>Фамилия <span>*</span></label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-12 mb-20">
+                                    <label>Адрес <span>*</span></label>
+                                    <input placeholder="Улица и номер дома" type="text">
+                                </div>
+                                <div class="col-12 mb-20">
+                                    <input placeholder="Квартира (Опционально)" type="text">
+                                </div>
+                                <div class="col-12 mb-20">
+                                    <label>Город <span>*</span></label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-12 mb-20">
+                                    <label>Область <span>*</span></label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-lg-6 mb-20">
+                                    <label>Телефон<span>*</span></label>
+                                    <input type="text">
+
+                                </div>
+                                <div class="col-lg-6 mb-20">
+                                    <label> Электронная почта <span>*</span></label>
+                                    <input type="text">
+
+                                </div>
+                                <div class="col-12 mb-20">
+                                    <label class="righ_0" for="address" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsetwo" aria-controls="collapseOne">Сохранить
+                                        адрес</label>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <form action="#">
+                            <h3>Ваш заказ</h3>
+                            <div class="order_table table-responsive mb-30">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Название товара</th>
+                                            <th>Итого</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> Товар <strong> × 2</strong></td>
+                                            <td> Цена</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Товар <strong> × 2</strong></td>
+                                            <td> Цена</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Товар <strong> × 2</strong></td>
+                                            <td> Цена</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Товар <strong> × 1</strong></td>
+                                            <td> Цена</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Промежуточный итог</th>
+                                            <td>250 руб.</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Скидка</th>
+                                            <td><strong>150 руб.</strong></td>
+                                        </tr>
+                                        <tr class="order_total">
+                                            <th>Итого</th>
+                                            <td><strong>100 руб.</strong></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="payment_method">
+                                <div class="panel-default">
+                                    <input id="payment" name="check_method" type="radio"
+                                        data-bs-target="createp_account" />
+                                    <label for="payment" data-bs-toggle="collapse" data-bs-target="#method"
+                                        aria-controls="method">Банковская карта</label>
+
+                                    <div id="method" class="collapse one" data-bs-parent="#accordion">
+                                        <div class="card-body1">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eius
+                                                cumque ea alias doloribus omnis, ab accusantium numquam! Fuga et facere
+                                                officia repellendus earum consequatur fugiat possimus ipsum doloribus
+                                                sapiente!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-default">
+                                    <input id="payment_defult" name="check_method" type="radio"
+                                        data-bs-target="createp_account" />
+                                    <label for="payment_defult" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsedefult" aria-controls="collapsedefult">СБП <img src=""
+                                            alt=""></label>
+
+                                    <div id="collapsedefult" class="collapse one" data-bs-parent="#accordion">
+                                        <div class="card-body1">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae atque
+                                                consequuntur corrupti, omnis veritatis autem, ullam nisi distinctio
+                                                laboriosam quam illum. Soluta nulla illum reiciendis totam incidunt
+                                                asperiores magnam labore?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="order_button">
+                                    <button type="submit">Оплатить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Checkout page section end-->
+
+    <!--shipping area start-->
+    <div class="shipping_area shipping_contact ">
+        <div class="container">
+            <div class="shipping_contact">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="single_shipping">
+                            <div class="shipping_icone">
+                                <span class="pe-7s-call"></span>
+                            </div>
+                            <div class="shipping_content">
+                                <h3>+7 (499) 670-09-09</h3>
+                                <p>Линия поддержки!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="single_shipping">
+                            <div class="shipping_icone">
+                                <span class="pe-7s-mail"></span>
+                            </div>
+                            <div class="shipping_content">
+                                <h3>info@moscowflow.ru</h3>
+                                <p>Поддержка заказов!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="single_shipping column_3">
+                            <div class="shipping_icone">
+                                <span class="pe-7s-timer"></span>
+                            </div>
+                            <div class="shipping_content">
+                                <h3>Пн-Пт / 8:00 - 18:00</h3>
+                                <p>Рабочие дни/часы!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer class="footer__section footer__bg">
+    <div class="container">
+        <div class="main__footer section--padding">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer__widget">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/img/Flow_logo.png" height="60" alt=""></a>
+                        </div>
+                        <div class="footer__widget--inner">
+                            <div class="footer__social">
+                                <ul class="social__shear d-flex">
+                                    <li class="social__shear--list">
+                                        <a class="social__shear--list__icon fa fa-vk" target="_blank"
+                                            href="https://www.vk.ru">
+                                        </a>
+                                    </li>
+                                    <li class="social__shear--list">
+                                        <a class="social__shear--list__icon fa fa-youtube-play" target="_blank"
+                                            href="https://youtube.com">
+                                        </a>
+                                    </li>
+                                    <li class="social__shear--list">
+                                        <a class="social__shear--list__icon fa fa-telegram" target="_blank"
+                                            href="https://www.telegram.com">
+                                        </a>
+                                    </li>
+                                    <li class="social__shear--list">
+                                        <a class="social__shear--list__icon fa fa-whatsapp" target="_blank"
+                                            href="https://www.whatsapp.com">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer__widget">
+                        <h2 class="footer__widget--title ">О компании <button class="footer__widget--button"
+                                aria-label="footer widget button"></button>
+                            <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
+                                width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
+                                <path d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z"
+                                    transform="translate(-6 -8.59)" fill="currentColor"></path>
+                            </svg>
+                        </h2>
+                        <ul class="footer__widget--menu footer__widget--inner">
+                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                    href="about.html">О нас</a></li>
+                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                    href="contact.html">Контакты</a></li>
+                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                    href="wishlist.html">Условия использования</a></li>
+                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                    href="privacy-policy.html">Политика конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer__widget">
+                        <h2 class="footer__widget--title ">Аккаунт <button class="footer__widget--button"
+                                aria-label="footer widget button"></button>
+                            <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
+                                width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
+                                <path d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z"
+                                    transform="translate(-6 -8.59)" fill="currentColor"></path>
+                            </svg>
+                        </h2>
+                        <ul class="footer__widget--menu footer__widget--inner">
+                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                    href="my-account.html">Мой аккаунт</a></li>
+                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                    href="cart.html">Корзина</a></li>
+                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                    href="login.html">Логин</a></li>
+                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                    href="login.html">Регистрация</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom d-flex justify-content-between align-items-center">
+            <p class="copyright__content  m-0">Copyright © 2024 <a class="copyright__content--link" href="index.html"
+                    style="color: white;">FlowShop</a></p>
+            <p class="footer__bottom--desc copyright__content"><a style="color: white;">Адрес: Москва, ул.
+                    Ставропольска,43
+                    <br>
+                    Телефон: +7 (499) 670 09 09
+                    <br>
+                    Email: info@moscowflow.ru
+        </div>
+    </div>
+</footer>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script type="module">import swiper from 'https://cdn.jsdelivr.net/npm/swiper@11.0.7/+esm'</script>
+<script src="assets/js/widget.js"></script>
+
+
+</html>
