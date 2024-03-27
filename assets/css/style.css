@@ -1382,6 +1382,437 @@ a {
 
 /* Конец оформления */
 
+/* 	Магазин */
+
+.widget_list h3 {
+	padding: 0 0 15px;
+	color: #444444;
+	text-transform: capitalize;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	display: block;
+	position: relative;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+}
+.widget_list  h3::before {
+	content: "";
+	width: 70px;
+	height: 2px;
+	background: #2971f5;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.widget_list ul li a {
+	color: #444444;
+	text-transform: capitalize;
+	padding-left: 25px;
+	position: relative;
+	font-size: 14px;
+	line-height: 33px;
+	display: block;
+}
+.widget_list ul li a:hover{
+    color: #2971f5;
+}
+.widget_list ul li a::before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 8px;
+	border: 1px solid #e0e0e0;
+	border-radius: 3px;
+	width: 16px;
+	height: 16px;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+.widget_list ul li a:hover::before{
+    border-color: #2971f5;
+}
+.widget_list {
+	margin-bottom: 31px;
+}
+.block_tags a {
+	margin-right: 8px;
+	padding: 4px 12px;
+	color: #444444;
+	background: #eeeeee;
+	font-weight: 400;
+	line-height: 30px;
+	font-size: 13px;
+}
+.block_tags a:hover{
+    background: #2971f5;
+    color: #fff;
+}
+.widget_list:last-child {
+	margin-bottom: 0;
+}
+.widget_list.tag_widget {
+	margin-bottom: 42px;
+}
+.shop_toolbar {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.list_button ul li a {
+	width: 40px;
+	height: 40px;
+	color: #fff;
+	font-weight: normal;
+	font-size: 26px;
+	background: #444444;
+	text-align: center;
+	line-height: 40px;
+	margin-right: 10px;
+	display: block;
+	border-radius: 3px;
+}
+.list_button ul li a:hover,.list_button ul li a.active{
+    background: #2971f5;
+}
+.select_option .nice-select {
+	width: 150px;
+	float: right;
+	height: 35px;
+	line-height: 35px;
+	margin-left: 20px;
+}
+.select_option .nice-select::after {
+	top: 56%;
+}
+.select_option ul.list {
+	width: 100%;
+	max-height: 180px;
+	overflow: auto;
+}
+.select_option.number .nice-select {
+	width: 90px;
+}
+.select_option label {
+	margin-bottom: 0;
+	line-height: 35px;
+}
+.shop_tab_product .single_product {
+	margin-bottom: 30px;
+}
+
+.list_item .product_ratting {
+	margin-bottom: 15px;
+}
+.list_item .product_content h3 {
+	margin-bottom: 18px;
+}
+.list_item .product_price {
+	margin-bottom: 15px;
+}
+.list_item .product_description p {
+	color: #777777;
+	line-height: 26px;
+}
+.product_description {
+	margin-bottom: 22px;
+}
+.pagination_style ul li a,.pagination_style ul li.current_number {
+	width: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #ddd;
+	margin-left: 7px;
+	color: #444444;
+    border-radius: 3px;
+}
+.pagination_style ul li {
+	display: inline-block;
+}
+.pagination_style ul li a:hover,.pagination_style ul li.current_number {
+    background: #2971f5;
+    border-color: #2971f5;
+    color: #fff;
+}
+.pagination_style {
+	text-align: right;
+}
+
+/* Конец магазина */
+
+/* Оформление товаров */
+
+.product_details h3 {
+	font-size: 20px;
+	line-height: 24px;
+	color: #444444;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.product_details .product_price {
+	margin-bottom: 15px;
+}
+.product_details .product_ratting {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 15px;
+}
+.product_details .product_ratting ul {
+	margin-right: 20px;
+}
+.product_details .product_description p {
+	font-size: 16px;
+	font-weight: 300;
+}
+.product_details .product_description {
+	margin-bottom: 20px;
+}
+.product_stock input {
+	width: 70px;
+	padding: 0 6px;
+	border: 1px solid #ddd;
+	background: inherit;
+	margin-left: 20px;
+}
+.product_details_action h3 {
+	margin-bottom: 26px;
+}
+.product_action_link ul li {
+	display: inline-block;
+}
+.product_action_link ul li a {
+	font-size: 15px;
+	color: #444444;
+	margin-right: 20px;
+	font-weight: 300;
+}
+.product_action_link ul li a:hover{
+    color: #2971f5;
+}
+.product_action_link ul li a i {
+	margin-right: 5px;
+	font-size: 18px;
+}
+.product_action_link ul li.product_cart a {
+	background: #2971f5;
+	color: #ffffff;
+	line-height: 40px;
+	width: 150px;
+	font-size: 14px;
+	font-weight: 500;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 3px;
+}
+.product_stock {
+	margin-bottom: 28px;
+}
+.social_sharing ul li {
+	display: inline-block;
+}
+.social_sharing ul li a {
+	text-align: center;
+	font-size: 13px;
+	padding: 7px 15px;
+	line-height: 40px;
+	color: #fff;
+	border-radius: 4px;
+	margin-right: 10px;
+}
+.social_sharing ul li:last-child a,.product_action_link ul li:last-child a,.product_thumb_button ul li:last-child{
+    margin-right: 0;
+}
+.social_sharing ul li a.bg-facebook{
+    background: #435f9f;
+}
+.social_sharing ul li a.bg-Tweet{
+    background: #00aaf0;
+}
+.social_sharing ul li a.bg-google{
+    background: #e04b34;
+}
+.social_sharing ul li a.bg-pinterest{
+    background: #ce1f21;
+}
+.social_sharing span {
+	width: 87px;
+	float: left;
+	line-height: 40px;
+	color: #444444;
+	font-weight: 500;
+	font-size: 16px;
+}
+.product_stock label {
+	margin-bottom: 0;
+	font-size: 16px;
+	color: #444444;
+	font-weight: 500;
+}
+.product_action_link {
+	margin-bottom: 24px;
+}
+.product_thumb_button ul li {
+	border: 1px solid #ddd;
+	width: 110px;
+	margin-right: 10px;
+}
+
+.single_product_wrapper {
+	margin-bottom: 45px;
+}
+.produtc_area.related_Product {
+	margin-bottom: 40px;
+}
+
+.produtc_area.related_Product .consoles_product_title,.produtc_area.upsell_Products .consoles_product_title {
+	margin-bottom: 23px;
+	border-bottom: 1px solid #ddd;
+}
+
+/* Конец оформления товаров */
+
+/* Информация о товаре */
+
+.product_d_inner {
+	border: 1px solid #ddd;
+}
+.product_info_button ul li a {
+	display: block;
+	padding: 10px 30px;
+	float: left;
+	text-transform: uppercase;
+	font-size: 16px;
+	background: #f0f0f0;
+	color: #242424;
+	font-weight: 600;
+	margin-right: 10px;
+}
+.product_info_button ul li a.active,.product_info_button ul li a:hover,.product_review_form button:hover {
+    background: #2971f5;
+	color: #fff;
+}
+
+.product_d_inner .tab-content {
+	padding: 20px 30px 22px;
+}
+.product_info_content p {
+	color: #555;
+}
+.product_d_table {
+	padding: 10px 0 22px;
+}
+.product_d_table table {
+	border-top: 1px solid #ddd;
+	width: 100%;
+}
+.product_d_table table tbody tr {
+	border-bottom: 1px solid #ddd;
+}
+.product_d_table table tbody tr td:first-child {
+	border-right: 1px solid #ddd;
+	width: 30%;
+	font-weight: 700;
+}
+.product_d_table table tbody tr td {
+	padding: 7px 17px;
+}
+.product_info_inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 15px;
+}
+.product_info_inner .product_ratting p {
+	margin-bottom: 5px;
+}
+.product_info_inner .product_ratting {
+	margin-bottom: 10px;
+}
+.product_demo {
+	margin-left: 30px;
+}
+.product_info_inner .product_ratting strong {
+	margin-top: 10px;
+	display: block;
+	margin-bottom: 8px;
+}
+.product_review_form form .col-12 {
+	margin-bottom: 12px;
+}
+.product_review_form h2 {
+	font-size: 17px;
+	text-transform: uppercase;
+	color: #242424;
+	font-weight: 600;
+}
+.product_review_form textarea {
+	border: 1px solid #ddd;
+	background: none;
+	height: 120px;
+	resize: none;
+}
+.product_review_form input {
+	border: 1px solid #ddd;
+	background: none;
+}
+.product_review_form button {
+	border: none;
+	background: #242424;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 5px 15px;
+	display: block;
+	-webkit-transition: .3s;
+	transition: .3s;
+	cursor: pointer;
+	margin-top: 20px;
+}
+.product_review_form p {
+	margin-bottom: 7px;
+}
+.product_d_info {
+	margin-bottom: 41px;
+}
+
+/*  */
+
+.related_Product .product_active.owl-carousel .owl-nav div, .upsell_Products .product_active.owl-carousel .owl-nav div {
+	top: -68px;
+}
+.product_sidebar .produtc_area.upsell_Products {
+	margin-bottom: 0;
+}
+.product_right_sidebar {
+	margin-bottom: 38px;
+}
+.product_right_sidebar .product_thumb_button ul li {
+	border: 1px solid #ddd;
+	width: 76px;
+	margin-right: 10px;
+}
+.product_gallery_wrapper .product_gallery_thumb {
+	width: 50%;
+	float: left;
+}
+
+.nav.product_d_button {
+    flex-wrap: inherit;
+}
+
+/* Конец информации о товаре */
 
 /* Footer */
 
