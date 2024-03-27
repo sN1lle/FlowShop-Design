@@ -198,9 +198,9 @@
             </div>
         </div>
     </header>
-    <!--header area end-->
+    
 
-    <!--breadcrumbs area start-->
+    
     <div class="breadcrumbs_area commun_bread">
         <div class="container">
             <div class="row">
@@ -217,152 +217,112 @@
             </div>
         </div>
     </div>
-    <!--breadcrumbs area end-->
+    
 
-    <!-- my account start  -->
+    
     <section class="main_content_area">
         <div class="container">
             <div class="account_dashboard">
                 <div class="row">
                     <div class="col-sm-12 col-md-3 col-lg-3">
-                        <!-- Nav tabs -->
+                        
                         <div class="dashboard_tab_button">
                             <ul role="tablist" class="nav flex-column dashboard-list">
-                                <li><a href="#dashboard" data-bs-toggle="tab" class="nav-link active">Dashboard</a></li>
-                                <li> <a href="#orders" data-bs-toggle="tab" class="nav-link">Orders</a></li>
-                                <li><a href="#downloads" data-bs-toggle="tab" class="nav-link">Downloads</a></li>
-                                <li><a href="#address" data-bs-toggle="tab" class="nav-link">Addresses</a></li>
-                                <li><a href="#account-details" data-bs-toggle="tab" class="nav-link">Account details</a>
+                                <li><a href="#dashboard" data-bs-toggle="tab" class="nav-link active">Панель управления</a></li>
+                                <li> <a href="#orders" data-bs-toggle="tab" class="nav-link">Заказы</a></li>                                
+                                <li><a href="#address" data-bs-toggle="tab" class="nav-link">Адрес</a></li>
+                                <li><a href="#account-details" data-bs-toggle="tab" class="nav-link">Детали аккаунта</a>
                                 </li>
-                                <li><a href="login.html" class="nav-link">logout</a></li>
+                                <li><a href="login.html" class="nav-link">Выйти</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-9 col-lg-9">
-                        <!-- Tab panes -->
+                        
                         <div class="tab-content dashboard_content">
                             <div class="tab-pane fade show active" id="dashboard">
-                                <h3>Dashboard </h3>
-                                <p>From your account dashboard. you can easily check &amp; view your <a href="#">recent
-                                        orders</a>, manage your <a href="#">shipping and billing addresses</a> and <a
-                                        href="#">Edit your password and account details.</a></p>
+                                <h3>Панель управления </h3>
+                                <p>С панели управления вашей учетной записи. вы можете легко проверять и просматривать свои <a href="#">последние заказы</a>, 
+                                    управлять своими <a href="#">адресами доставки</a>, а также <a
+                                        href="#">редактировть свой пароль и данные учетной записи.</a></p>
                             </div>
                             <div class="tab-pane fade" id="orders">
-                                <h3>Orders</h3>
+                                <h3>Заказы</h3>
                                 <div class="coron_table table-responsive">
                                     <table class="table">
                                         <thead>
                                             <tr>
-                                                <th>Order</th>
-                                                <th>Date</th>
-                                                <th>Status</th>
-                                                <th>Total</th>
-                                                <th>Actions</th>
+                                                <th>Заказ</th>
+                                                <th>Дата</th>
+                                                <th>Статус</th>
+                                                <th>Цена</th>
+                                                <th>Действие</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
-                                                <td>May 10, 2023</td>
-                                                <td><span class="success">Completed</span></td>
-                                                <td>$25.00 for 1 item </td>
-                                                <td><a href="cart.html" class="view">view</a></td>
+                                                <td>Май 10, 2023</td>
+                                                <td><span class="success">Завершен</span></td>
+                                                <td>250.00 рублей</td>
+                                                <td><a href="cart.html" class="view">Обзор</a></td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>May 10, 2023</td>
-                                                <td>Processing</td>
-                                                <td>$17.00 for 1 item </td>
-                                                <td><a href="cart.html" class="view">view</a></td>
+                                                <td>Май 13, 2023</td>
+                                                <td>В процессе</td>
+                                                <td>1700.00 рублей</td>
+                                                <td><a href="cart.html" class="view">Обзор</a></td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="downloads">
-                                <h3>Downloads</h3>
-                                <div class="coron_table table-responsive">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>Product</th>
-                                                <th>Downloads</th>
-                                                <th>Expires</th>
-                                                <th>Download</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Shopnovilla - Free Real Estate PSD Template</td>
-                                                <td>May 10, 2023</td>
-                                                <td><span class="danger">Expired</span></td>
-                                                <td><a href="#" class="view">Click Here To Download Your File</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Organic - ecommerce html template</td>
-                                                <td>Sep 11, 2023</td>
-                                                <td>Never</td>
-                                                <td><a href="#" class="view">Click Here To Download Your File</a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="address">
-                                <p>The following addresses will be used on the checkout page by default.</p>
-                                <h4 class="billing-address">Billing address</h4>
-                                <a href="#" class="view" style="color: #0656f8;">Edit</a>
-                                <p><strong>Bobby Jackson</strong></p>
+                            <div class="tab-pane" id="address">                              
+                                <h4 class="billing-address">Адрес</h4>
+                                <a href="#" class="view" style="color: #0656f8;">Изменить</a>
+                                <p><strong>Александр Русов</strong></p>
                                 <address>
-                                    House #15<br>
-                                    Road #1<br>
-                                    Block #C <br>
-                                    Banasree <br>
-                                    Dhaka <br>
-                                    1212
+                                    Саратовская обл.<br>
+                                    г. Саратов<br>
+                                    ул. Черепанова <br>
+                                    д. 28 <br>
+                                    кв. 7 <br>
                                 </address>
-                                <p>Bangladesh</p>
                             </div>
                             <div class="tab-pane fade" id="account-details">
-                                <h3>Account details </h3>
+                                <h3>Личные данные</h3>
                                 <div class="login">
                                     <div class="login_form_container">
                                         <div class="account_login_form">
-                                            <form action="#">
-                                                <p>Already have an account? <a href="#">Log in instead!</a></p>
+                                            <form action="#">                                               
                                                 <div class="input-radio">
                                                     <span class="custom-radio"><input type="radio" value="1"
-                                                            name="id_gender"> Mr.</span>
+                                                            name="id_gender"> Мужчина</span>
                                                     <span class="custom-radio"><input type="radio" value="1"
-                                                            name="id_gender"> Mrs.</span>
+                                                            name="id_gender">Женщина</span>
                                                 </div> <br>
-                                                <label>First Name</label>
+                                                <label>Имя</label>
                                                 <input type="text" name="first-name">
-                                                <label>Last Name</label>
+                                                <label>Фамилия</label>
                                                 <input type="text" name="last-name">
                                                 <label>Email</label>
                                                 <input type="text" name="email-name">
-                                                <label>Password</label>
+                                                <label>Пароль</label>
                                                 <input type="password" name="user-password">
-                                                <label>Birthdate</label>
-                                                <input type="text" placeholder="MM/DD/YYYY" value="" name="birthday">
-                                                <span class="example">
-                                                    (E.g.: 05/31/1970)
-                                                </span>
                                                 <br>
                                                 <span class="custom_checkbox">
                                                     <input type="checkbox" value="1" name="optin">
-                                                    <label>Receive offers from our partners</label>
+                                                    <label>Получать предложения от партнеров</label>
                                                 </span>
                                                 <br>
                                                 <span class="custom_checkbox">
                                                     <input type="checkbox" value="1" name="newsletter">
-                                                    <label>Sign up for our newsletter<br><em>You may unsubscribe at any
-                                                            moment. For that purpose, please find our contact info in
-                                                            the legal notice.</em></label>
+                                                    <label>Подписаться на рассылку новостей<br><em>Вы можете отказаться от подписки в любой
+                                                        момент.</em></label>
                                                 </span>
                                                 <div class="save_button primary_btn default_button">
-                                                    <a href="#">Save</a>
+                                                    <a href="#" style="color: #0656f8;">Сохранить</a>
                                                 </div>
                                             </form>
                                         </div>
@@ -378,6 +338,7 @@
     <!-- my account end   -->
 
     <!--shipping area start-->
+    <br>
     <div class="shipping_area shipping_contact ">
         <div class="container">
             <div class="shipping_contact">
@@ -389,7 +350,7 @@
                             </div>
                             <div class="shipping_content">
                                 <h3>(999) 1234 56789</h3>
-                                <p>Free support line!</p>
+                                <p>Горячая линия</p>
                             </div>
                         </div>
                     </div>
@@ -400,7 +361,7 @@
                             </div>
                             <div class="shipping_content">
                                 <h3>Support@plazathemes.com</h3>
-                                <p>Orders Support!</p>
+                                <p>Поддержка заказов</p>
                             </div>
                         </div>
                     </div>
@@ -410,8 +371,8 @@
                                 <span class="pe-7s-timer"></span>
                             </div>
                             <div class="shipping_content">
-                                <h3>Mon - Fri / 8:00 - 18:00</h3>
-                                <p>Working Days/Hours!</p>
+                                <h3>Пн - Пт / 8:00 - 18:00</h3>
+                                <p>Рабочие дни/часы</p>
                             </div>
                         </div>
                     </div>
@@ -423,14 +384,14 @@
                         <div class="col-12">
                             <div class="field_newsletter">
                                 <div class="newsletter_text">
-                                    <h3>Sign Up For Newsletter</h3>
-                                    <p>Be the First to Know. Sign up to newsletter today</p>
+                                    <h3>Подпишитесь на рассылку новостей</h3>
+                                    <p>Узнавайте новости первыми</p>
                                 </div>
                                 <div class="subscribe_form">
                                     <form id="mc-form" class="mc-form footer-newsletter">
                                         <input id="mc-email" type="email" autocomplete="off"
-                                            placeholder="Please enter your email to subscribe" />
-                                        <button id="mc-submit">Subscribe</button>
+                                            placeholder="Введите свою эл. почту" />
+                                        <button id="mc-submit">Подписаться</button>
                                         <div class="email_icon">
                                             <i class="icon-mail"></i>
                                         </div>

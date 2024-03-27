@@ -1910,5 +1910,186 @@ a {
 	margin-bottom: 20px;
 }
 
+.newsletter_area {
+	position: absolute;
+	top: -152px;
+	margin-bottom: 45px;
+	width: 100%;
+}
+
+.newsletter_area.newsletter_two .field_newsletter,.footer_area.footer_two .copyright_area{
+    background: #51aa1b;
+}
+.newsletter_area.newsletter_two .newsletter_form button:hover,.newsletter_popup.newsletter_popup_two .popup_close span:hover {
+	color: #51aa1b;
+}
+
+.newsletter_area.newsletter_four {
+	top: -154px;
+}
+
+.field_newsletter {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	background: #2971f5;
+	padding: 30px 100px;
+	border-radius: 4px;
+}
+
+.newsletter_text h3 {
+	font-size: 24px;
+	line-height: 24px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 0;
+}
+.newsletter_text p {
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.subscribe_form form {
+	position: relative;
+	width: 500px;
+}
+.subscribe_form input {
+	background: #ffffff;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	padding: 0px 146px 0 20px;
+	width: 100%;
+	border: 0;
+	border-radius: 3px;
+}
+.subscribe_form button {
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 50px;
+	border: 0;
+	border-radius: 3px;
+	background: #444444;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0px 30px;
+	cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.subscribe_form button:hover{
+    color: #2971f5;
+}
+
+.coming_soon_newsletter .subscribe_form {
+	margin-top: 0;
+  }
+  .coming_soon_newsletter .subscribe_form form {
+	margin: 0 auto;
+	width: 600px;
+	background: inherit;
+	border: 1px solid #f0f0f0;
+	border-radius: 50px;
+	  position: relative;
+  }
+  @media only screen and (max-width: 767px) {
+	.coming_soon_newsletter .subscribe_form form {
+	  width: 100%;
+	}
+  }
+  .coming_soon_newsletter .subscribe_form form input::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari */
+	color: #ffffff;
+  }
+  .coming_soon_newsletter .subscribe_form form input::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #ffffff;
+  }
+  .coming_soon_newsletter .subscribe_form form input:-ms-input-placeholder {
+	/* IE 10+ */
+	color: #ffffff;
+  }
+  .coming_soon_newsletter .subscribe_form form input:-moz-placeholder {
+	/* Firefox 18- */
+	color: #ffffff;
+  }
+  .coming_soon_newsletter .subscribe_form form input {
+	color: #ffffff;
+	font-size: 14px;
+	padding: 0 120px 0 28px;
+	background: inherit;
+	height: 48px;
+	  border: 0;
+  }
+  .coming_soon_newsletter .subscribe_form form button {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+	background: inherit;
+	color: #ffffff;
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	  border: 0;
+  height: 100%;
+	  padding: 0 20px;
+	  cursor: pointer;
+  }
+  @media only screen and (max-width: 767px) {
+	.coming_soon_newsletter .subscribe_form form button {
+	  font-size: 13px;
+	  padding: 0 13px;
+	}
+  }
+  .coming_soon_newsletter .subscribe_form form button:hover {
+	color: #ffd54c;
+  }
+  .coming_soon_newsletter .subscribe_form form button::before {
+	content: "";
+	background: #ffffff;
+	width: 2px;
+	position: absolute;
+	bottom: 8px;
+	top: 8px;
+	left: 0;
+  }
+
+  .mailchimp-success {
+	text-align: center;
+	max-width: 510px;
+	color: #fff;
+	margin: 0 auto;
+}
+.mailchimp-error {
+	text-align: center;
+	color: #fff;
+}
+.mailchimp-success.active {
+	margin-top: 20px;
+}
+.mailchimp-success {
+	text-align: center;
+	max-width: 510px;
+	color: #fff;
+	margin: 0 auto;
+}
+
+.coming_soon_newsletter .mailchimp-error {
+	text-align: center;
+	color: #ffffff;
+  }
+  .coming_soon_newsletter .mailchimp-success {
+	text-align: center;
+	color: #ffffff;
+  }
+
 
 /* #0656f8  */
