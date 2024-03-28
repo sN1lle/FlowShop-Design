@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    
+
 </head>
 
 <body>
@@ -216,31 +216,22 @@
             <div class="row">
                 <div class="col-lg-3 col-md-12">
                     <div class="sidebar_widget">
-                        <div class="single__widget price__filter widget__bg">
-                            <h2 class="widget__title position__relative h3">Цена</h2>
-                            <form class="price__filter--form" action="#"> 
-                                <div class="price__filter--form__inner mb-15 d-flex align-items-center">
-                                    <div class="price__filter--group">
-                                        <label class="price__filter--label" for="Filter-Price-GTE2">От</label>
-                                        <div class="price__filter--input border-radius-5 d-flex align-items-center">
-                                            <input class="price__filter--input__field border-0" id="Filter-Price-GTE2" name="filter.v.price.gte" type="number" placeholder="0" min="0" max="250.00">
-                                            <span class="price__filter--currency">руб</span>
-                                        </div>
-                                    </div>
-                                    <div class="price__divider">
-                                        <span>-</span>
-                                    </div>
-                                    <div class="price__filter--group">
-                                        <label class="price__filter--label" for="Filter-Price-LTE2">To</label>
-                                        <div class="price__filter--input border-radius-5 d-flex align-items-center">
-                                            <input class="price__filter--input__field border-0" id="Filter-Price-LTE2" name="filter.v.price.lte" type="number" min="0" placeholder="250.00" max="250.00"> 
-                                            <span class="price__filter--currency">руб</span>
-                                        </div>	
-                                    </div>
+                        <div class="widget_list widget_color">
+                            <h3>Цена</h3>
+                            <input type="range" class="custom-range" min="0" max="100" name="">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label>От</label>
+                                    <input class="form-control" placeholder="0 руб." type="number">
                                 </div>
-                                <button class="price__filter--btn primary__btn" type="submit">Применить</button>
-                            </form>
+                                <div class="form-group text-right col-md-6">
+                                    <label>До</label>
+                                    <input class="form-control" placeholder="10к руб." type="number">
+                                </div>
+                            </div>
+                            <button class="btn btn-block btn-primary mt-3">Принять</button>
                         </div>
+
                         <div class="widget_list widget_color">
                             <h3>Категории</h3>
                             <ul>
@@ -260,7 +251,9 @@
                         <div class="widget_list manufacturer">
                             <h3>Наличие</h3>
                             <ul>
-                                <li><a href="#">Только товары в наличии </a></li>
+                                <li><a href="#">В наличии </a></li>
+                                <li><a href="#">Скоро появятся </a></li>
+
 
                             </ul>
                         </div>
@@ -268,19 +261,6 @@
                 </div>
                 <div class="col-lg-9 col-md-12">
                     <div class="shop_toolbar">
-
-                        <div class="list_button">
-                            <ul class="nav" role="tablist">
-                                <li>
-                                    <a class="active" data-bs-toggle="tab" href="#large" role="tab"
-                                        aria-controls="large" aria-selected="true"><i class="ion-grid"></i></a>
-                                </li>
-                                <li>
-                                    <a data-bs-toggle="tab" href="#list" role="tab" aria-controls="list"
-                                        aria-selected="false"><i class="ion-android-menu"></i></a>
-                                </li>
-                            </ul>
-                        </div>
                         <div class="select_option">
                             <form action="#">
                                 <label>Сортировать:</label>
@@ -303,27 +283,22 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6">
                                         <div class="single_product">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <h3><a href="product-details.html">Game Controller</a></h3>
+                                                <h3><a href="product-details.html">Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -332,27 +307,22 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6">
                                         <div class="single_product">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <h3><a href="product-details.html">Mpow Bluetoothp</a></h3>
+                                                <h3><a href="product-details.html">Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -361,27 +331,22 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6">
                                         <div class="single_product">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <h3><a href="product-details.html"> Bonna 21 pixelsf</a></h3>
+                                                <h3><a href="product-details.html"> Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -390,27 +355,22 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6">
                                         <div class="single_product">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <h3><a href="product-details.html">Aicok Stand Mixet</a></h3>
+                                                <h3><a href="product-details.html">Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -419,27 +379,22 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6">
                                         <div class="single_product">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <h3><a href="product-details.html">Game Controller</a></h3>
+                                                <h3><a href="product-details.html">Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -448,27 +403,22 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6">
                                         <div class="single_product">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <h3><a href="product-details.html">Cuisinart DCC-3200</a></h3>
+                                                <h3><a href="product-details.html">Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -477,27 +427,22 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6">
                                         <div class="single_product">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <h3><a href="product-details.html">Classic 17-Piece</a></h3>
+                                                <h3><a href="product-details.html">Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -506,27 +451,22 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6">
                                         <div class="single_product">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <h3><a href="product-details.html">Game Controller</a></h3>
+                                                <h3><a href="product-details.html">Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -535,27 +475,22 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6">
                                         <div class="single_product">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <h3><a href="product-details.html">Aicok Stand Mixet</a></h3>
+                                                <h3><a href="product-details.html">Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -568,8 +503,8 @@
                                     <div class="row align-items-center">
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -578,9 +513,9 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <h3><a href="product-details.html">Aicok Stand Mixet</a></h3>
+                                                <h3><a href="product-details.html">Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_description">
                                                     <p>Maybe Smaller than regular Size, PLS CHOOSE THE SIZE 1-2 Size UP
@@ -591,12 +526,7 @@
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -607,8 +537,8 @@
                                     <div class="row align-items-center">
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -617,9 +547,9 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <h3><a href="product-details.html">Bonna 21 mega pixelsg</a></h3>
+                                                <h3><a href="product-details.html">Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_description">
                                                     <p>Maybe Smaller than regular Size, PLS CHOOSE THE SIZE 1-2 Size UP
@@ -630,12 +560,7 @@
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -646,8 +571,8 @@
                                     <div class="row align-items-center">
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -656,9 +581,9 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <h3><a href="product-details.html">Aicok Stand Mixet</a></h3>
+                                                <h3><a href="product-details.html">Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_description">
                                                     <p>Maybe Smaller than regular Size, PLS CHOOSE THE SIZE 1-2 Size UP
@@ -669,12 +594,7 @@
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -685,8 +605,8 @@
                                     <div class="row align-items-center">
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -695,9 +615,9 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <h3><a href="product-details.html">Cutlery Knife Set</a></h3>
+                                                <h3><a href="product-details.html">Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_description">
                                                     <p>Maybe Smaller than regular Size, PLS CHOOSE THE SIZE 1-2 Size UP
@@ -708,12 +628,7 @@
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -724,8 +639,8 @@
                                     <div class="row align-items-center">
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -734,9 +649,9 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <h3><a href="product-details.html">Aicok Stand Mixet</a></h3>
+                                                <h3><a href="product-details.html">Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_description">
                                                     <p>Maybe Smaller than regular Size, PLS CHOOSE THE SIZE 1-2 Size UP
@@ -747,12 +662,7 @@
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -763,8 +673,8 @@
                                     <div class="row align-items-center">
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -773,9 +683,9 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <h3><a href="product-details.html">Aicok Stand Mixet</a></h3>
+                                                <h3><a href="product-details.html">Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_description">
                                                     <p>Maybe Smaller than regular Size, PLS CHOOSE THE SIZE 1-2 Size UP
@@ -786,12 +696,7 @@
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -802,8 +707,8 @@
                                     <div class="row align-items-center">
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -812,9 +717,9 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <h3><a href="product-details.html">Cutlery Knife Set</a></h3>
+                                                <h3><a href="product-details.html">Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_description">
                                                     <p>Maybe Smaller than regular Size, PLS CHOOSE THE SIZE 1-2 Size UP
@@ -825,12 +730,7 @@
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -841,8 +741,8 @@
                                     <div class="row align-items-center">
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -851,9 +751,9 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <h3><a href="product-details.html">Aicok Stand Mixet</a></h3>
+                                                <h3><a href="product-details.html">Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_description">
                                                     <p>Maybe Smaller than regular Size, PLS CHOOSE THE SIZE 1-2 Size UP
@@ -864,12 +764,7 @@
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -880,8 +775,8 @@
                                     <div class="row align-items-center">
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
-                                                <a href="product-details.html"><img
-                                                        src="assets/img/product.jpg" alt=""></a>
+                                                <a href="product-details.html"><img src="assets/img/product.jpg"
+                                                        alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -890,9 +785,9 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <h3><a href="product-details.html">Cutlery Knife Set</a></h3>
+                                                <h3><a href="product-details.html">Название товара</a></h3>
                                                 <div class="product_price">
-                                                    <span class="current_price">$23.00</span>
+                                                    <span class="current_price">100 руб</span>
                                                 </div>
                                                 <div class="product_description">
                                                     <p>Maybe Smaller than regular Size, PLS CHOOSE THE SIZE 1-2 Size UP
@@ -903,12 +798,7 @@
                                                 <div class="product_action">
                                                     <ul>
                                                         <li class="product_cart"><a href="cart.html"
-                                                                title="Add to Cart">Add to Cart</a></li>
-                                                        <li class="add_links"><a href="wishlist.html"
-                                                                title="Add to Wishlist"><i
-                                                                    class="ion-ios-heart-outline"></i></a></li>
-                                                        <li class="add_links"><a href="compare.html"
-                                                                title="Add to Compare"><i class="ion-loop"></i></a></li>
+                                                                title="Add to Cart">В корзину</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
