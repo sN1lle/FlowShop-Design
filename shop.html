@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    
 </head>
 
 <body>
@@ -215,64 +216,57 @@
             <div class="row">
                 <div class="col-lg-3 col-md-12">
                     <div class="sidebar_widget">
-                        <!--widget color start-->
+                        <div class="single__widget price__filter widget__bg">
+                            <h2 class="widget__title position__relative h3">Цена</h2>
+                            <form class="price__filter--form" action="#"> 
+                                <div class="price__filter--form__inner mb-15 d-flex align-items-center">
+                                    <div class="price__filter--group">
+                                        <label class="price__filter--label" for="Filter-Price-GTE2">От</label>
+                                        <div class="price__filter--input border-radius-5 d-flex align-items-center">
+                                            <input class="price__filter--input__field border-0" id="Filter-Price-GTE2" name="filter.v.price.gte" type="number" placeholder="0" min="0" max="250.00">
+                                            <span class="price__filter--currency">руб</span>
+                                        </div>
+                                    </div>
+                                    <div class="price__divider">
+                                        <span>-</span>
+                                    </div>
+                                    <div class="price__filter--group">
+                                        <label class="price__filter--label" for="Filter-Price-LTE2">To</label>
+                                        <div class="price__filter--input border-radius-5 d-flex align-items-center">
+                                            <input class="price__filter--input__field border-0" id="Filter-Price-LTE2" name="filter.v.price.lte" type="number" min="0" placeholder="250.00" max="250.00"> 
+                                            <span class="price__filter--currency">руб</span>
+                                        </div>	
+                                    </div>
+                                </div>
+                                <button class="price__filter--btn primary__btn" type="submit">Применить</button>
+                            </form>
+                        </div>
                         <div class="widget_list widget_color">
-                            <h3>Select By Color</h3>
+                            <h3>Категории</h3>
                             <ul>
-                                <li><a href="#">Black </a></li>
+                                <li><a href="#">Доски </a></li>
 
-                                <li><a href="#">Orange </a></li>
+                                <li><a href="#">Серфинг </a></li>
 
-                                <li> <a href="#">Blue</a></li>
+                                <li> <a href="#">Аэротруба</a></li>
 
-                                <li><a href="#">Yellow</a></li>
+                                <li><a href="#">Одежда</a></li>
 
-                                <li><a href="#">pink</a></li>
+                                <li><a href="#">Одежда для купания</a></li>
 
-                                <li><a href="#">green</a></li>
+                                <li><a href="#">Аксессуары</a></li>
                             </ul>
                         </div>
-                        <!--widget color start-->
-
-                        <!--manufacturer start-->
                         <div class="widget_list manufacturer">
-                            <h3>Manufacturer</h3>
+                            <h3>Наличие</h3>
                             <ul>
-                                <li><a href="#">Fisher-Price </a></li>
+                                <li><a href="#">Только товары в наличии </a></li>
 
-                                <li><a href="#">WolVol </a></li>
-
-                                <li> <a href="#"> K'NEX </a></li>
-
-                                <li><a href="#">Liberty Imports</a></li>
-
-                                <li><a href="#">ALEX Toys</a></li>
                             </ul>
                         </div>
-                        <!--manufacturer start-->
-
-                        <!--widget  price start-->
-                        <div class="widget_list price">
-                            <h3>Pricer</h3>
-                            <ul>
-                                <li><a href="#">$0.00 - $99.99 </a></li>
-
-                                <li><a href="#">$100.00 and above </a></li>
-                            </ul>
-                        </div>
-                        <!--widget  price start-->
-
-                        <!--widget banner start-->
-                        <div class="widget_list banner">
-                            <div class="banner_thumb">
-                                <a href="#"><img src="assets/img/banner/banner9.png" alt=""></a>
-                            </div>
-                        </div>
-                        <!--widget banner end-->
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-12">
-                    <!--shop toolbar start-->
                     <div class="shop_toolbar">
 
                         <div class="list_button">
@@ -287,35 +281,21 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="select_option number">
-                            <form action="#">
-                                <label>Show:</label>
-                                <select name="orderby" id="short">
-                                    <option selected value="1">9</option>
-                                    <option value="1">19</option>
-                                    <option value="1">30</option>
-                                </select>
-                            </form>
-                        </div>
                         <div class="select_option">
                             <form action="#">
-                                <label>Sort By</label>
+                                <label>Сортировать:</label>
                                 <select name="orderby" id="short1">
-                                    <option selected value="1">Position</option>
-                                    <option value="1">Price: Lowest</option>
-                                    <option value="1">Price: Highest</option>
-                                    <option value="1">Product Name:Z</option>
-                                    <option value="1">Sort by price:low</option>
-                                    <option value="1">Product Name: Z</option>
-                                    <option value="1">In stock</option>
-                                    <option value="1">Product Name: A</option>
-                                    <option value="1">In stock</option>
+                                    <option selected value="1">Порядок: по умолчанию</option>
+                                    <option value="1">Цена: по возрастанию</option>
+                                    <option value="1">Цена: по убыванию</option>
+                                    <option value="1">Название: А-Я</option>
+                                    <option value="1">Название: Я-А</option>
+                                    <option value="1">Порядок: сперва новые</option>
+                                    <option value="1">Порядок: сперва старые</option>
                                 </select>
                             </form>
                         </div>
                     </div>
-                    <!--shop toolbar end-->
-                    <!--shop tab product-->
                     <div class="shop_tab_product">
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="large" role="tabpanel">
@@ -324,22 +304,13 @@
                                         <div class="single_product">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product6.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html">Game Controller</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -362,22 +333,13 @@
                                         <div class="single_product">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product7.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html">Mpow Bluetoothp</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -400,22 +362,13 @@
                                         <div class="single_product">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product8.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html"> Bonna 21 pixelsf</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -438,22 +391,13 @@
                                         <div class="single_product">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product9.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html">Aicok Stand Mixet</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -476,22 +420,13 @@
                                         <div class="single_product">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product10.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html">Game Controller</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -514,22 +449,13 @@
                                         <div class="single_product">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product11.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html">Cuisinart DCC-3200</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -552,22 +478,13 @@
                                         <div class="single_product">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product12.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html">Classic 17-Piece</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -590,22 +507,13 @@
                                         <div class="single_product">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product13.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html">Game Controller</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -628,22 +536,13 @@
                                         <div class="single_product">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product14.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html">Aicok Stand Mixet</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -670,7 +569,7 @@
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product14.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -679,15 +578,6 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html">Aicok Stand Mixet</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -718,7 +608,7 @@
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product16.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -727,15 +617,6 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html">Bonna 21 mega pixelsg</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -766,7 +647,7 @@
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product17.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -775,15 +656,6 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html">Aicok Stand Mixet</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -814,7 +686,7 @@
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product18.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -823,15 +695,6 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html">Cutlery Knife Set</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -862,7 +725,7 @@
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product19.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -871,15 +734,6 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html">Aicok Stand Mixet</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -910,7 +764,7 @@
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product20.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -919,15 +773,6 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html">Aicok Stand Mixet</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -958,7 +803,7 @@
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product21.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -967,15 +812,6 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html">Cutlery Knife Set</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -1006,7 +842,7 @@
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product22.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -1015,15 +851,6 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html">Aicok Stand Mixet</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -1054,7 +881,7 @@
                                         <div class="col-lg-4 col-md-5">
                                             <div class="product_thumb">
                                                 <a href="product-details.html"><img
-                                                        src="assets/img/product/product23.jpg" alt=""></a>
+                                                        src="assets/img/product.jpg" alt=""></a>
                                                 <div class="btn_quickview">
                                                     <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
                                                         title="Quick View"><i class="ion-ios-eye"></i></a>
@@ -1063,15 +890,6 @@
                                         </div>
                                         <div class="col-lg-8 col-md-7">
                                             <div class="product_content">
-                                                <div class="product_ratting">
-                                                    <ul>
-                                                        <li><a href="#"><i class="ion-star"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                        <li><a href="#"><i class="ion-ios-star-outline"></i></a></li>
-                                                    </ul>
-                                                </div>
                                                 <h3><a href="product-details.html">Cutlery Knife Set</a></h3>
                                                 <div class="product_price">
                                                     <span class="current_price">$23.00</span>
@@ -1101,9 +919,6 @@
 
                         </div>
                     </div>
-                    <!--shop tab product end-->
-
-                    <!--pagination style start-->
                     <div class="pagination_style">
                         <ul>
                             <li class="current_number">1</li>
@@ -1113,12 +928,78 @@
                             <li><a href="#">»</a></li>
                         </ul>
                     </div>
-                    <!--pagination style end-->
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="shipping_area shipping_contact ">
+        <div class="container">
+            <div class="shipping_contact">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="single_shipping">
+                            <div class="shipping_icone">
+                                <span class="pe-7s-call"></span>
+                            </div>
+                            <div class="shipping_content">
+                                <h3>+7 (499) 670-09-09</h3>
+                                <p>Горячая линия</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="single_shipping">
+                            <div class="shipping_icone">
+                                <span class="pe-7s-mail"></span>
+                            </div>
+                            <div class="shipping_content">
+                                <h3>Info@Moscowflow.Ru</h3>
+                                <p>Поддержка заказов</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="single_shipping column_3">
+                            <div class="shipping_icone">
+                                <span class="pe-7s-timer"></span>
+                            </div>
+                            <div class="shipping_content">
+                                <h3>Пн - Пт / 8:00 - 18:00</h3>
+                                <p>Рабочие дни/часы</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter_area">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="field_newsletter">
+                                <div class="newsletter_text">
+                                    <h3>Подпишитесь на рассылку новостей</h3>
+                                    <p>Узнавайте новости первыми</p>
+                                </div>
+                                <div class="subscribe_form">
+                                    <form id="mc-form" class="mc-form footer-newsletter">
+                                        <input id="mc-email" type="email" autocomplete="off"
+                                            placeholder="Введите свою эл. почту" />
+                                        <button id="mc-submit">Подписаться</button>
+                                        <div class="email_icon">
+                                            <i class="icon-mail"></i>
+                                        </div>
+                                    </form>
+                                    <div class="mailchimp-alerts text-centre">
+                                        <div class="mailchimp-submitting"></div>
+                                        <div class="mailchimp-success"></div>
+                                        <div class="mailchimp-error"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="footer__section footer__bg">
         <div class="container">
             <div class="main__footer section--padding">
@@ -1221,7 +1102,7 @@
     <script src="assets/js/script.js"></script>
 </body>
 
-<script src="js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
@@ -1229,8 +1110,11 @@
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
-<script type="module">import swiper from 'https://cdn.jsdelivr.net/npm/swiper@11.0.7/+esm'</script>
 <script src="assets/js/widget.js"></script>
+<script src="assets/js/map.js"></script>
+<script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+<script src="assets/js/ajax-mail.js"></script>
+<script src="assets/js/popper.js"></script>
 
 
 </html>
