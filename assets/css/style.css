@@ -3085,5 +3085,10 @@ a {
 	margin-bottom: 38px;
 }
 
-
+.form-style {
+	background-color: white;
+	border: #ddd;
+	border-radius: 10px;
+	padding: 10px;
+}
 /* #0656f8  */
