@@ -1201,6 +1201,10 @@ a {
 .user-actions h3 a{
     color: #2971f5;
 }
+.user_info{
+	padding: 10px;
+}
+
 .checkout_info {
 	border: 1px solid #ddd;
 	margin-top: 25px;
