@@ -210,9 +210,9 @@
             <div class="checkout_form" >
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <form action="#" >
+                        <form action="#" style="background-color: white; border: 1px solid #ddd;" >
                             <h3>Данные пользователя</h3>
-                            <div class="row">
+                            <div class="row user_info">
 
                                 <div class="col-lg-6 mb-20">
                                     <label>Имя <span>*</span></label>
@@ -257,10 +257,10 @@
                         </form>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <form action="#">
+                        <form action="#" style="background-color: white; border: 1px solid #ddd;" >
                             <h3>Ваш заказ</h3>
                             <div class="order_table table-responsive mb-30">
-                                <table>
+                                <table class="user_info">
                                     <thead>
                                         <tr>
                                             <th>Название товара</th>
@@ -301,7 +301,7 @@
                                     </tfoot>
                                 </table>
                             </div>
-                            <div class="payment_method">
+                            <div class="payment_method user_info">
                                 <div class="panel-default">
                                     <input id="payment" name="check_method" type="radio"
                                         data-bs-target="createp_account" />
