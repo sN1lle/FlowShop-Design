@@ -1,23 +1,19 @@
-<!doctype html>
-<html lang="ru">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FlowShop</title>
-    <!-- Подключение CSS файла bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/bundle.css">
-    <link rel="stylesheet" href="assets/css/plugins.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-</head>
-
-
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>FlowShop</title>
+        <!-- Подключение CSS файла bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/bundle.css">
+        <link rel="stylesheet" href="assets/css/plugins.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    </head>
 <body>
-
     <header class="header_area">
         <div class="header_middel" style="background-color: #0656f8;">
             <div class="container">
@@ -161,7 +157,7 @@
                                 <ul>
                                     <li><a href="shop.html">Товары</a>
                                     </li>
-                                    <li><a href="kontakt.html">О нас</a></li>
+                                    <li><a href="about.html">О нас</a></li>
                                 </ul>
 
                             </div>
@@ -173,7 +169,7 @@
 
                                             </ul>
                                         </li>
-                                        <li><a href="kontakt.html">О нас</a></li>
+                                        <li><a href="about.html">О нас</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -192,126 +188,108 @@
             </div>
         </div>
     </header>
+    
 
-    <div class="breadcrumbs_area">
-        <div class="container">
-            <div class="breadcrumbs_inner">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="breadcrumb_content">
-                            <h3 class="no-capitalization">FlowShop твой проводник в мир волн!</h3>
-                            <ul>
-                                <li><a href="index.html">Главная</a></li>
-                                <li><i class="fa fa-angle-right"></i></li>
-                                <li>О нас</li>
-                            </ul>
+<footer class="footer__section footer__bg">
+    <div class="container">
+        <div class="main__footer section--padding">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer__widget">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/img/Flow_logo.png" height="60" alt=""></a>
+                        </div>
+                        <div class="footer__widget--inner">
+                            <div class="footer__social">
+                                <ul class="social__shear d-flex">
+                                    <li class="social__shear--list">
+                                        <a class="social__shear--list__icon fa fa-vk fa-2x" target="_blank"
+                                            href="https://www.vk.ru">
+                                        </a>
+                                    </li>
+                                    <li class="social__shear--list">
+                                        <a class="social__shear--list__icon fa fa-youtube-play fa-2x"
+                                            target="_blank" href="https://youtube.com">
+                                        </a>
+                                    </li>
+                                    <li class="social__shear--list">
+                                        <a class="social__shear--list__icon fa fa-telegram fa-2x" target="_blank"
+                                            href="https://www.telegram.com">
+                                        </a>
+                                    </li>
+                                    <li class="social__shear--list">
+                                        <a class="social__shear--list__icon fa fa-whatsapp fa-2x" target="_blank"
+                                            href="https://www.whatsapp.com">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer__widget">
+                        <h2 class="footer__widget--title ">О компании <button class="footer__widget--button"
+                                aria-label="footer widget button"></button>
+                            <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
+                                width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
+                                <path d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z"
+                                    transform="translate(-6 -8.59)" fill="currentColor"></path>
+                            </svg>
+                        </h2>
+                        <ul class="footer__widget--menu footer__widget--inner">
+                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                    href="about.html">О нас</a></li>
+                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                    href="kontakt.html">Контакты</a></li>
+                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                    href="terms.html">Пользовательское соглашение</a></li>
+                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                    href="privacy-policy.html">Политика конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer__widget">
+                        <h2 class="footer__widget--title ">Аккаунт <button class="footer__widget--button"
+                                aria-label="footer widget button"></button>
+                            <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
+                                width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
+                                <path d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z"
+                                    transform="translate(-6 -8.59)" fill="currentColor"></path>
+                            </svg>
+                        </h2>
+                        <ul class="footer__widget--menu footer__widget--inner">
+                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                    href="profile.html">Мой аккаунт</a></li>
+                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                    href="cart.html">Корзина</a></li>
+                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                    href="login.html">Логин</a></li>
+                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
+                                    href="register.html">Регистрация</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+
+                </div>
             </div>
+        </div>
+        <div class="footer__bottom d-flex justify-content-between align-items-center">
+            <p class="copyright__content  m-0">Copyright © 2024 <a class="copyright__content--link"
+                    href="index.html" style="color: white;">FlowShop</a></p>
+            <p class="footer__bottom--desc copyright__content"><a style="color: white;">Адрес: Москва, ул.
+                    Ставропольска,43
+                    <br>
+                    Телефон: +7 (499) 670 09 09
+                    <br>
+                    Email: info@moscowflow.ru
         </div>
     </div>
-
-    <footer class="footer__section footer__bg">
-        <div class="container">
-            <div class="main__footer section--padding">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__widget">
-                            <div class="logo">
-                                <a href="index.html"><img src="assets/img/Flow_logo.png" height="60" alt=""></a>
-                            </div>
-                            <div class="footer__widget--inner">
-                                <div class="footer__social">
-                                    <ul class="social__shear d-flex">
-                                        <li class="social__shear--list">
-                                            <a class="social__shear--list__icon fa fa-vk fa-2x" target="_blank"
-                                                href="https://www.vk.ru">
-                                            </a>
-                                        </li>
-                                        <li class="social__shear--list">
-                                            <a class="social__shear--list__icon fa fa-youtube-play fa-2x" target="_blank"
-                                                href="https://youtube.com">
-                                            </a>
-                                        </li>
-                                        <li class="social__shear--list">
-                                            <a class="social__shear--list__icon fa fa-telegram fa-2x" target="_blank"
-                                                href="https://www.telegram.com">
-                                            </a>
-                                        </li>
-                                        <li class="social__shear--list">
-                                            <a class="social__shear--list__icon fa fa-whatsapp fa-2x" target="_blank"
-                                                href="https://www.whatsapp.com">
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer__widget">
-                            <h2 class="footer__widget--title ">О компании <button class="footer__widget--button"
-                                    aria-label="footer widget button"></button>
-                                <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
-                                    width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
-                                    <path d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z"
-                                        transform="translate(-6 -8.59)" fill="currentColor"></path>
-                                </svg>
-                            </h2>
-                            <ul class="footer__widget--menu footer__widget--inner">
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                        href="about.html">О нас</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                        href="contact.html">Контакты</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                        href="wishlist.html">Условия использования</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                        href="privacy-policy.html">Политика конфиденциальности</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="footer__widget">
-                            <h2 class="footer__widget--title ">Аккаунт <button class="footer__widget--button"
-                                    aria-label="footer widget button"></button>
-                                <svg class="footer__widget--title__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
-                                    width="12.355" height="8.394" viewBox="0 0 10.355 6.394">
-                                    <path d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z"
-                                        transform="translate(-6 -8.59)" fill="currentColor"></path>
-                                </svg>
-                            </h2>
-                            <ul class="footer__widget--menu footer__widget--inner">
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                        href="my-account.html">Мой аккаунт</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                        href="cart.html">Корзина</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                        href="login.html">Логин</a></li>
-                                <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                        href="login.html">Регистрация</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="footer__bottom d-flex justify-content-between align-items-center">
-                <p class="copyright__content  m-0">Copyright © 2024 <a class="copyright__content--link"
-                        href="index.html" style="color: white;">FlowShop</a></p>
-                <p class="footer__bottom--desc copyright__content"><a style="color: white;">Адрес: Москва, ул.
-                        Ставропольска,43
-                        <br>
-                        Телефон: +7 (499) 670 09 09
-                        <br>
-                        Email: info@moscowflow.ru
-            </div>
-        </div>
-    </footer>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
+</footer>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 
 <script src="js/bootstrap.min.js"></script>

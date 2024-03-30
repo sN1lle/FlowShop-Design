@@ -902,7 +902,7 @@ a {
 
 .breadcrumb_content h3 {
 	font-size: 24px;
-	text-transform: capitalize;
+	text-transform: none;
 	color: #2971f5;
 	font-weight: 500;
 	margin-bottom: 10px;
@@ -3098,6 +3098,20 @@ a {
 
 /* О нас */
 
+.single_counterup1 {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	background: #f3f3f3;
+	padding: 88px;
+	display: flex;
+	margin-bottom: 30px;
+}
 
 /* Конец о нас */
+
+/* Контакты */
+
+/* Конец контактов */
+
+
 /* #0656f8  */
